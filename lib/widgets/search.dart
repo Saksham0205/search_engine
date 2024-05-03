@@ -19,11 +19,16 @@ class _SearchState extends State<Search> {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Center(
-          child: Image.asset("assets/images/google-logo.png",height: size.height *0.10,),
+          child: Image.asset(
+            "assets/images/google-logo.png",
+            height: size.height * 0.10,
+          ),
         ),
-        SizedBox(height: 20,),
         SizedBox(
-          width: size.width * 0.4,
+          height: 20,
+        ),
+        SizedBox(
+          width: size.width > 768 ? size.width * 0.4 : size.width * 0.9,
           child: TextFormField(
             decoration: InputDecoration(
               border: OutlineInputBorder(
@@ -34,17 +39,16 @@ class _SearchState extends State<Search> {
               ),
               prefixIcon: Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: SvgPicture.asset("assets/images/search-icon.svg",color: searchBorder),
+                child: SvgPicture.asset("assets/images/search-icon.svg",
+                    color: searchBorder),
               ),
               suffixIcon: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: SvgPicture.asset("assets/images/mic-icon.svg"),
               ),
             ),
-
           ),
         )
-
       ],
     );
   }

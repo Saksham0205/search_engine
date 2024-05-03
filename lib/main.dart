@@ -15,15 +15,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: backgroundColor,
-      ),
-      home: const ResponsiveScreen(mobileScreenLayout: MobileScreenLayout(), webScreenLayout: WebScreenLayout(),
-
-      )
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'Srach Engine',
+        theme: ThemeData.dark().copyWith(
+          scaffoldBackgroundColor: backgroundColor,
+        ),
+        home: const ResponsiveScreen(
+          mobileScreenLayout: MobileScreenLayout(),
+          webScreenLayout: WebScreenLayout(),
+        ));
   }
 }
-
