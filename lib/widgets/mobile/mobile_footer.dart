@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../colors.dart';
 import '../footer_text.dart';
 class MobileFooter extends StatelessWidget {
   const MobileFooter({super.key});

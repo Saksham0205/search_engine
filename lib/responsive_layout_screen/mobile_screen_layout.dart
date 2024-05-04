@@ -6,7 +6,6 @@ import '../colors.dart';
 import '../widgets/search.dart';
 import '../widgets/translation_button.dart';
 import '../widgets/web/search_buttons.dart';
-import '../widgets/web/web_footer.dart';
 class MobileScreenLayout extends StatefulWidget {
   const MobileScreenLayout({super.key});
 
