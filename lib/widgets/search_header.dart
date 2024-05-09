@@ -40,28 +40,30 @@ class SearchHeadeer extends StatelessWidget {
                 ),
                 decoration: InputDecoration(
                     suffixIcon: Container(
-
                       child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 8.0),
                         child: Row(
-                                        mainAxisAlignment: MainAxisAlignment.end,
-                                        mainAxisSize: MainAxisSize.min,
-                                        children: [
-                        SvgPicture.asset(
-                          "assets/images/mic-icon.svg",
-                          height: 20,
-                          width: 20,
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            SvgPicture.asset(
+                              "assets/images/mic-icon.svg",
+                              height: 20,
+                              width: 20,
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Icon(
+                              Icons.search,
+                              color: blueColor,
+                            )
+                          ],
                         ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                                         Icon(Icons.search,color: blueColor,)
-                                        ],
-                                      ),
                       ),
                     ),
-                focusedBorder: InputBorder.none,
-                enabledBorder: InputBorder.none) ,
+                    focusedBorder: InputBorder.none,
+                    enabledBorder: InputBorder.none),
               ),
             ),
           ),
